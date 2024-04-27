@@ -1,3 +1,4 @@
+/* the * element targets all HTML elements */
 * {
     margin: 0;
     /*spacing between the exterior container and sub contents*/
@@ -17,11 +18,11 @@ body {
 }
 
 header {
-    /* -Flexible Boxes- allows us to turn any HTML container tag into a box with flexible dimensions where the contents of the box are entered either as a column or a row */
+    /* -Flexible Boxes- allows us to turn any HTML container tag into a box with flexible dimensions where the contents of the box are entered either as a column or a row (row is the default orientation of a flex box) */
     display: flex;
-    /*aligns items in the verticle plane*/
+    /*aligns items in the verticle plane/ aligns items on the cross axis oppose to the main axis which we use justify-content for*/
     align-items: center;
-    /*aligns itmes horizontally*/
+    /*aligns itmes horizontally/ justifys how children elements are aligned along the main axis */
     justify-content: space-between;
     padding: 14px;
 }
@@ -63,6 +64,7 @@ main {
     /*parent must have flex display. Tells child to be space greedy*/
     flex: 1;
     display: flex;
+    /* -flex-direction- allows us to change the default row (horizontal) to a column (verticle) */
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -181,3 +183,5 @@ footer > section:last-child {
         flex-direction: row;
     }
 }
+
+/* self-start: aligns the items to be flush with the edge of the alignment container corresponding to the items start side in the cross axis */
