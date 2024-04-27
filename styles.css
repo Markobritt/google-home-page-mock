@@ -17,6 +17,7 @@ body {
 }
 
 header {
+    /* -Flexible Boxes- allows us to turn any HTML container tag into a box with flexible dimensions where the contents of the box are entered either as a column or a row */
     display: flex;
     /*aligns items in the verticle plane*/
     align-items: center;
